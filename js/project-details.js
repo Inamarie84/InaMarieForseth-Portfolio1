@@ -1,4 +1,3 @@
-// project-details.js
 document.addEventListener("DOMContentLoaded", function () {
   const projectDetailsElement = document.getElementById("project-details");
 
@@ -33,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <h1 class="project-title">${title}</h1>
               <img class="project-image" src="${image}" alt="${title} screenshot">
               <p class="project-description">${description}</p>
+              <button class="go-back-button" onclick="window.history.back()">Go Back</button>
           </div>
       `;
   } else {
