@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const projectDetailsElement = document.getElementById("project-details");
 
+  if (!projectDetailsElement) {
+    console.error('Element with ID "project-details" not found.');
+    return;
+  }
+
   // Get query parameters
   const urlParams = new URLSearchParams(window.location.search);
   const project = urlParams.get("project");
