@@ -26,21 +26,21 @@
     margin: 20px 0; 
 }
 
-
-html {
-    scroll-behavior: smooth;
+html, body {
     height: 100%;
-    font-size: 18px;
-  }
-
-body {
-    font-family: "roboto", sans-serif;
-    min-height: 100vh;
-    background-color: var(--color-main);
-    color: var(--color-font);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    font-family: "roboto", sans-serif;
+    background-color: var(--color-main);
+    color: var(--color-font);
+}
+
+main {
+    flex: 1;
 }
 
 hr {
@@ -141,7 +141,7 @@ header {
     text-align: center;
     padding: 20px;
     max-width: 600px;
-    margin: auto; 
+    margin: 20px auto; 
 }
 
 .project-title {
@@ -160,7 +160,28 @@ header {
 .project-description {
     font-size: 18px; 
     line-height: 1.5; 
+    margin-bottom: 20px;
 }
+
+
+.project-tools, .project-links {
+    margin: 30px;
+  }
+  
+  .project-links a.button {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: var(--color-button);
+    color: var(--color-main);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .project-links a.button:hover {
+    background-color: var(--color-header);
+    text-decoration: underline;
+  }
 
 /* footer */
 
@@ -168,8 +189,9 @@ footer {
     color: var(--color-main);
     background-color: var(--color-header);
     font-size: 14px;
-    margin: 20px 0px;
     padding: 20px;
+    text-align: center;
+    margin-top: auto;
 }
 
 /* button */
