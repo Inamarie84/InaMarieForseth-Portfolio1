@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
       tools: "HTML, CSS",
       links: {
         Netlify: "https://semesterproject1-inaforseth-1711.netlify.app/",
-        GitHub: "https://github.com/example/project1",
+        GitHub:
+          "https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth",
       },
     },
     project2: {
