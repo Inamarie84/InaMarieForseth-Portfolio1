@@ -204,6 +204,29 @@ header {
     text-decoration: underline;
   }
 
+/* icons */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    margin: 20px; 
+  }
+  
+  .icons a {
+    text-decoration: none; 
+    color: var(--color-main); 
+  }
+  
+  .icons i {
+    font-size: 40px; 
+    transition: transform 0.3s; 
+  }
+  
+  .icons i:hover {
+    transform: scale(1.2); 
+  }
+  
 /* footer */
 
 footer {
