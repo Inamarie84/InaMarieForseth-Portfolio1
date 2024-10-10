@@ -206,24 +206,34 @@ header {
 
 /* icons */
 
-.icons {
+.icons, .contact-icons {
     display: flex;
     justify-content: center;
     gap: 25px; 
     margin: 20px; 
+  }
+
+  .contact-icons {
+    margin-bottom: 40px;
   }
   
   .icons a {
     text-decoration: none; 
     color: var(--color-main); 
   }
-  
-  .icons i {
-    font-size: 40px; 
-    transition: transform 0.3s; 
+
+  .contact-icons a {
+    text-decoration: none;
+    color: var(--color-header);
   }
   
-  .icons i:hover {
+  .icons i, .contact-icons i {
+    font-size: 30px; 
+    transition: transform 0.3s; 
+  }
+
+  .icons i:hover,
+  .contact-icons i:hover {
     transform: scale(1.2); 
   }
   
