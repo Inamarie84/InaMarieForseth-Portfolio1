@@ -1,23 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const projectDetailsElement = document.getElementById("project-details");
+  const loadingIndicator = document.querySelector(".loading-indicator");
 
-  // Check if the projectDetailsElement exists before proceeding
   if (!projectDetailsElement) {
     console.warn(
       'Element with ID "project-details" not found. Skipping project details script.'
     );
     return;
   }
-  console.log('Element with ID "project-details" found.');
 
-  // Show loading indicator
   document.body.classList.add("loading");
 
-  // Get query parameters
   const urlParams = new URLSearchParams(window.location.search);
   const project = urlParams.get("project");
 
-  // Define project details
   const projects = {
     project1: {
       title: "Community Science Museum",
@@ -55,11 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  // Load project details
   if (projects[project]) {
     const { title, description, image, tools, links } = projects[project];
 
-    // Convert links object to HTML string as buttons
+    // Update the document title
+    document.title = `Portfolio | ${title}`;
+
     const linksHtml = Object.entries(links)
       .map(
         ([key, value]) =>
@@ -81,6 +78,5 @@ document.addEventListener("DOMContentLoaded", function () {
     projectDetailsElement.innerHTML = `<p class="error-message">Project not found.</p>`;
   }
 
-  // Hide loading indicator
   document.body.classList.remove("loading");
 });
