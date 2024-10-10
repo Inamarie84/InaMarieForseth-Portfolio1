@@ -250,17 +250,21 @@ footer {
 
 /* button */
 
-button {
+.button, .go-back-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
     background-color: var(--color-button);
     color: var(--color-white);
     border: none;
-    padding: 10px 30px;
+    padding: 8px 10px;
     box-shadow: 0 0 10px var(--color-shadow);
     cursor: pointer;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
-button:hover {
+.button:hover, 
+.go-back-button:hover {
     background-color: var(--color-header);
 }
 
