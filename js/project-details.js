@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       links: {
         Netlify: "https://cross-course-inamarie84.netlify.app/",
         GitHub:
-          "https://github.com/Inamarie84/Semester-Project-1---Ina-Forseth",
+          "https://github.com/Noroff-FEU-Assignments/cross-course-project-Inamarie84/tree/cms-ca",
       },
     },
     project3: {
